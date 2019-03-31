@@ -1,0 +1,130 @@
+body{
+    font-size: 12px;
+}
+header{
+    background: #582349;  
+    padding: 35px 25px 0px 25px;
+    position: relative;
+}
+header .head_left{
+    float: left;
+}
+header .head_left img{
+    width: 34px;
+    margin-top: 10px;
+}
+/* 
+
+ */
+ header h1{ 
+     position: absolute;
+     font-family: 'FH4A';
+     color: #fff;
+     text-align: center;
+     margin-top: 10px;
+     left: 50%;
+     font-size: 20px;
+     margin-left: -40px
+ }
+.header_list input{
+    display: none;
+}
+.header_list label{
+    margin-right: 20px;
+    margin-top: 10px;
+    float: right; 
+    padding: 10px;
+    border: 1px solid #fff;
+    border-radius: 100%;
+}
+.header_list label::after{
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    clear: both;
+} 
+.header_list label span{ 
+    display: block;
+    /* vertical-align: middle;*/
+    width: 12px ;
+    height: 2px;
+    margin-top: 2px;
+    background: #fff;
+} 
+.header_list ul{
+    display: none;
+}
+.header_list ul li{   
+    display: block;
+    height: 24px; 
+}
+.header_list ul li a{
+    display: block;
+    height: 24px;
+    line-height: 24px;
+    width: 100%; 
+    background: #fff;
+    opacity: 0.5;
+    text-align: center;
+    transform: scale(0.75);
+}
+.header_list input[name="head_Nav"]:checked ~ ul{
+    position: absolute;
+    z-index: 99; 
+    display: block;
+    width: 120px;
+    height: 100%; 
+    margin-left: 290px;
+    margin-top: 45px;
+}
+.header_list input[name="head_Nav"]:checked ~ label{ 
+    transform: rotate(-90deg);
+}
+.header::after{
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    clear: both;
+}
+/* 
+HEADER END;
+*/
+.content{
+    width: 100%;
+    text-align: center; 
+    font-family: "FLB";
+    font-size: 12px; 
+}
+.content .Img_cent{
+    column-count: 2;
+    column-gap: 0;
+}
+.Img_cent img{
+    width: 100%;
+    height: 100%;
+}
+.Img_cent .List{
+    position: relative;
+    border: 1px solid #fff;
+}
+.List div{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -14px;
+    text-align: center;
+    font-family: 'FLB';
+    font-size: 12px;
+    color: #fff;
+}
+.List div h5{
+    transform: scale(0.6); 
+} 
+/* 
+    Img List END;
+*/

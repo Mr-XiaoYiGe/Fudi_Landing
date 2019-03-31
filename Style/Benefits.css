@@ -1,0 +1,138 @@
+body{
+    font-size: 12px;
+}
+header{
+    background: #582349;  
+    padding: 35px 25px 0px 25px;
+    position: relative;
+}
+header .head_left{
+    float: left;
+}
+header .head_left img{
+    width: 34px;
+    margin-top: 10px;
+}
+/* 
+
+ */
+ header h1{ 
+     position: absolute;
+     font-family: 'FH4A';
+     color: #fff;
+     text-align: center;
+     margin-top: 10px;
+     left: 50%;
+     font-size: 20px;
+     margin-left: -40px
+ }
+.header_list input{
+    display: none;
+}
+.header_list label{
+    margin-right: 20px;
+    margin-top: 10px;
+    float: right; 
+    padding: 10px;
+    border: 1px solid #fff;
+    border-radius: 100%;
+}
+.header_list label::after{
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    clear: both;
+} 
+.header_list label span{ 
+    display: block;
+    /* vertical-align: middle;*/
+    width: 12px ;
+    height: 2px;
+    margin-top: 2px;
+    background: #fff;
+} 
+.header_list ul{
+    display: none;
+}
+.header_list ul li{   
+    display: block;
+    height: 24px; 
+}
+.header_list ul li a{
+    display: block;
+    height: 24px;
+    line-height: 24px;
+    width: 100%; 
+    background: #fff;
+    opacity: 0.5;
+    text-align: center;
+    transform: scale(0.75);
+}
+.header_list input[name="head_Nav"]:checked ~ ul{
+    position: absolute;
+    z-index: 99; 
+    display: block;
+    width: 120px;
+    height: 100%;  
+    right: 0;
+    margin-top: 45px;
+}
+.header_list input[name="head_Nav"]:checked ~ label{ 
+    transform: rotate(-90deg);
+}
+.header::after{
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    clear: both;
+}
+/* 
+HEADER END;
+*/
+.content{
+    width: 100%;
+    text-align: center;
+}
+.content img{
+    width: 80px; 
+    border: 1px solid #000;
+    border-radius: 100%;
+    margin: 15px 0;
+}
+.Cont_Inspired div h2{
+    line-height: 2;
+    font-family: 'FLB'; 
+    font-size: 15px;
+}
+.Cont_Inspired div h2::after{
+    content: "";
+    display: block;
+    width: 70px;
+    height: 1px;
+    background: #f40;
+    margin: 0 auto 10px auto;
+}
+.Cont_Inspired div p{
+    display: inline-block;
+    width: 300px;
+    line-height: 1.5;
+    font-family: 'FLL';
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

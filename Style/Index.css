@@ -1,0 +1,185 @@
+ 
+body{
+    
+    background-color: transparent;
+}
+body img{
+    width: 100%;
+    position:absolute;
+    left: 0;
+    top: 0;
+    z-index: -99;
+}
+@media screen and (max-width:412px){
+    body .BG{
+        width: 100%;
+        height: 100%;
+    }
+}
+@media screen and (max-width:361px){ 
+    body .center .cen_img{
+        margin-top: 75px;
+    }
+    body .center .cen_Text{
+        margin: 10px 14px 0 14px;
+    }
+    .cen_Text h2{
+        margin: 10px 0;
+    }
+}
+@media screen and (max-width:376px){ 
+    body .center .cen_img{
+        margin-top: 85px;
+    }
+    body .center .cen_Text{
+        margin: 10px 14px 0 14px;
+    }
+    .cen_Text h2{
+        margin: 10px 0;
+    }
+}
+@media screen and (min-width:768px) and (max-width:1024px){
+    body .BG{
+        width: 100%;
+        height: 100%;
+    }
+    body .center .cen_img{
+        margin-top: 145px;
+    }
+    body .center .cen_Text{
+        margin: 10px 14px 0 14px;
+    }
+    .cen_Text h2{
+        margin: 40px 0;
+        font-size: 100px;
+    }
+    .center .cen_Text h3{
+        font-size: 36px;
+    }
+    .center .cen_Text a{
+        font-size: 18px;
+        padding: 10px 50px;
+    }
+    body .center p{
+        font-size: 14px;
+        margin-top: 35px;
+    }
+}
+.center{
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+}
+.center .cen_img{
+    position: relative;
+    width: 160px;
+    height: 215px; 
+    left: 50%;
+    margin-left: -80px; 
+    margin-top: 135px;
+}
+.center .cen_Text{
+    margin: 0px 74px 0 74px;
+    
+    text-align: center;
+}
+.cen_Text h3{
+    font-family: "TNR";
+    font-size: 24px;
+    text-align: center;
+    color: #fff;
+    font-style: italic; 
+}
+.cen_Text h2{
+    font-family: "FLB";
+    font-size: 65px;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+}
+.cen_Text a{
+    line-height: 43px;
+    width: 186px; 
+    padding: 13px 53px;   
+    border:2px solid #fff;
+    margin-top: 26.5px;
+    text-decoration: none;
+    color: #fff;
+    transition: all 1s ease;
+}
+.center .cen_Text .AND:hover{  
+    transform: scale(2); 
+    background: rgba(255,255,255,0.5);
+}
+
+.center p{
+    font-family: "FLB";
+    font-size: 9px;
+    color: #fff;
+    text-align: center;
+    margin-top: 26.5px;
+} 
+
+
+.header_list input{
+    display: none;
+}
+.header_list label{
+    margin-right: 20px;
+    margin-top: 10px;
+    float: right; 
+}
+.header_list label::after{
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    clear: both;
+} 
+.header_list label span{ 
+    display: block;
+    /* vertical-align: middle;*/
+    width: 12px ;
+    height: 2px;
+    margin-top: 2px;
+    background: #fff;
+} 
+.header_list ul{
+    display: none;
+}
+.header_list ul li{   
+    display: block;
+    height: 24px; 
+}
+.header_list ul li a{
+    display: block;
+    height: 24px;
+    line-height: 24px;
+    width: 100%; 
+    background: #fff;
+    opacity: 0.5;
+    text-align: center;
+    transform: scale(0.75);
+}
+.header_list input[name="head_Nav"]:checked ~ ul{
+    position: absolute;
+    z-index: 99; 
+    display: block;
+    width: 120px;
+    height: 100%;  
+    /* margin-left: 290px; */ 
+    right: 0;
+    margin-top: 20px;
+}
+.header_list input[name="head_Nav"]:checked ~ label{ 
+    transform: rotate(-90deg);
+}
+.header::after{
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    clear: both;
+}

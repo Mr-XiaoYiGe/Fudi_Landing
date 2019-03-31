@@ -1,0 +1,373 @@
+body{
+    
+    background-color: transparent;
+}
+body .Banner_Img{
+    width: 100%;
+    position:absolute;
+    left: 0;
+    top: 0;
+    z-index: -99;
+}
+.banner{
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+}
+.banner .header{
+    width: 80%;
+    margin: 0 10%;
+    padding-top: 10px;
+    position: relative;
+}
+.header img{
+    position: absolute;
+    width: 24px;
+}
+.header .header_list p{
+    float: right;
+    vertical-align: middle;
+    font-family: 'FLB'; 
+    font-size: 12px;
+    color: #fff;
+    margin-right: 6.5px;
+}
+.header_list input{
+    display: none;
+}
+.header_list label{
+    margin-right: -110px;
+    float: right; 
+}
+.header_list label::after{
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    clear: both;
+}
+.header_list label span{ 
+    display: block;
+    vertical-align: middle;
+    width: 12px ;
+    height: 2px;
+    margin-top: 2px;
+    background: #fff;
+}
+.header_list ul{
+    display: none;
+}
+.header_list ul li{   
+    display: block;
+    height: 24px; 
+}
+.header_list ul li a{
+    display: block;
+    height: 24px;
+    line-height: 24px;
+    width: 100%; 
+    background: #fff;
+    opacity: 0.5;
+    text-align: center;
+    transform: scale(0.75);
+}
+.header_list input[name="head_Nav"]:checked ~ ul{
+    position: absolute;
+    z-index: 99; 
+    display: block;
+    width: 120px;
+    height: 100%; 
+    right: 0;
+    margin-top: 20px;
+}
+.header_list input[name="head_Nav"]:checked ~ label{ 
+    transform: rotate(-90deg);
+}
+.header::after{
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    clear: both;
+}
+/* 
+
+*/
+.banner .cent{
+    width: 100%;
+    height: 100%;
+    margin-top: 40px;
+}
+.center .cen_Text{ 
+    margin-top: 71px;
+    text-align: center;
+}
+.cen_Text h3{
+    font-family: "TNR"; 
+    font-size: 12px;
+    transform: scale(0.9);
+    text-align: center;
+    color: #fff;
+    font-style: italic; 
+}
+.cen_Text h2{
+    font-family: "FLB";
+    font-size: 32px;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+}
+.cen_Text a{
+    position: relative;
+    left: 50%;
+    margin-left: -55px;
+    line-height: 43px;
+    width: 186px; 
+    padding: 2px 5px;   
+    border:2px solid #fff;
+    margin-top: 26.5px;
+    text-decoration: none;
+    color: #fff;
+    transition: all 1s ease; 
+}
+.cent .cen_Text .AND:hover{  
+    transform: scale(2); 
+    background: rgba(255,255,255,0.5);
+}
+
+.cent p{
+    font-family: "FLB";
+    font-size: 12px;
+    color: #fff;
+    transform: scale(0.3);
+    text-align: center;
+    margin-top: 0.5px;
+}
+/* 
+    cent END;
+*/
+.center{
+    width: 100%;
+    background: #fff;
+    margin-top: 50px;
+}
+.center .cent_Particulars{
+    width: 90%;
+    margin: 0 5%;
+    padding: 30px 0; 
+    display: flex;  
+    text-align: center;   
+} 
+.cent_Particulars .Par_left,
+.cent_Particulars .Par_cont,
+.cent_Particulars .Par_rigth{
+    width: 33.33%;
+} 
+.cent_Particulars img{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #000;
+    border-radius: 100%;  
+} 
+.cent_Particulars h3{
+    font-size: 12px;
+    color: #000;
+    transform: scale(0.8);
+} 
+.cent_Particulars p{
+    text-align: left;
+    font-size: 12px;
+    margin-top: 0;
+    transform: scale(0.9);
+    word-break: break-all;
+}  
+/* ]
+    cent_Particulars END;
+*/
+.FUDI_App{
+    width: 100%; 
+    display: flex;
+    background: #f7f7f7;
+    padding-top: 55px;
+}
+.App_Img,
+.App_Text{
+    width: 50%;
+}
+.App_Img img{ 
+    width: 85%;
+}
+.App_Text h3{
+    font-size: 12px;
+    transform: scale(0.8);
+    margin-left: -38px;
+}
+.App_Text p{
+    font-size: 12px;
+    transform: scale(0.7);
+    margin-left: -55px;
+}
+.App_Text .two,
+.App_Text .three{
+    margin-top: -10px;
+}
+.Text_Img img{
+    width: 25%;
+    float: left;
+    border-radius: 4px;
+    margin-left: -15px;
+}
+.Text_Img img:last-child{
+margin-left: 10px;
+}
+/* 
+
+*/
+
+#demo .carousel-inner .carousel-item .car_Img{
+    width: 100%;
+    height: 100%;
+}
+
+#demo .carousel-indicators li{
+    width: 3px;
+height: 3px;
+border-radius: 100%;
+}
+.carousel-item .car_Text{
+    font-family: "FLHI";
+    color: #fff;
+    font-size: 12px;
+    position: absolute;  
+    left: 50%;
+    top: 0;
+    margin-left: -155.2px;
+    width: 75%;
+    text-align: center;
+}
+.car_Text img{
+    display: inline-block;
+    width: 10%;
+    margin-top: 13px;
+    border-radius: 100%;
+    text-align: center;
+    border: 2px solid #958b94;
+}
+.car_Text P{   
+    margin-top: 3px;
+    line-height: 1.5;
+    opacity: 0.5;
+}
+.car_Text h4{
+    transform: scale(0.6);
+    opacity: 0.5;
+}
+/* 
+    cent_Particulars
+*/
+.Img_List{
+    width: 100%;
+    font-family: "FLB";
+    font-size: 12px;
+    padding: 25px 0;
+}
+.Img_head h4{
+    text-align: center;
+    transform: scale(0.7); 
+}
+.Img_head hr{
+    width: 30px;
+    background: #f40; 
+    position: relative;
+    left: 50%;
+    margin-left: -15px;
+    margin-bottom: 25px;
+}
+.Img_List .Img_cent{
+    column-count: 5;
+    column-gap: 0;
+}
+.Img_cent img{
+    width: 100%;
+    height: 100%;
+}
+.Img_cent .List{
+    position: relative;
+}
+.List div{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -14px;
+    text-align: center;
+    font-family: 'FLB';
+    font-size: 12px;
+    color: #fff;
+}
+.List div h5{
+    transform: scale(0.6); 
+} 
+/* 
+    Img List END;
+*/
+.center .cent_foot{
+    width: 90%;
+    margin: 0 5%;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding-bottom: 35px;
+}
+.cent_foot h4{
+    font-family: "FLB";
+    transform: scale(0.9);
+}
+.cent_foot h3{
+    font-family: "FLL";
+    transform: scale(0.8);
+}
+
+
+
+
+
+
+footer{ 
+    background: #f7f7f7; 
+}
+footer h1{  
+    float: left;
+    line-height: 4;
+    font-size: 12px;
+    color: #8b8b8b;
+    transform: scale(0.7);
+}
+footer h2{  
+    float: left;
+    line-height: 4;
+    font-size: 12px;
+    color: #8b8b8b;
+    transform: scale(0.7);
+    float: right;
+}
+footer span{
+    color: #000;
+    transform: scale(0.8);
+
+}
+footer::after{
+    content: "";
+    width: 0;
+    height: 0;
+    display: block;
+    overflow: hidden;
+    clear: both;
+}
+
+
+
